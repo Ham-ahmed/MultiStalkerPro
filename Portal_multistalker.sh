@@ -1,24 +1,26 @@
 #!/bin/sh
-#
-echo ''
-echo '************************************************************'
-echo "**                         STARTED                        **"
-echo '************************************************************'
-echo "**                 Uploaded by: Haitham                   **"
-echo "**  https://www.tunisia-sat.com/forums/threads/4220254/   **"
-echo "************************************************************"
-echo ''
-sleep 3s
-
-wget -O /home/stalker.conf "https://gitlab.com/hmeng80/extensions/-/raw/main/multistalker/stalker.conf"
-wget -O /etc/enigma2/MultiStalkerPro.json "https://gitlab.com/hmeng80/extensions/-/raw/main/multistalker/MultiStalkerPro.json"
-
+ # 
 echo ""
-cd ..
-sync
-echo "############ INSTALLATION COMPLETED ########"
-echo "############ RESTARTING... #################" 
-init 4
-sleep 2
-init 3
-exit 0
+cd /tmp
+curl  -k -Lbk -m 55532 -m 555104 "https://raw.githubusercontent.com/Ham-ahmed/MultiStalkerPro/main/New-20_Portals.tar.gz" > /tmp/New-20_Portals.tar.gz
+sleep 1
+echo "installing ...."
+cd /tmp
+tar -xzf New-20_Portals.tar.gz  -C /
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+sleep 1
+cd
+rm -f /tmp/New-20_Portals.tar.gz
+echo "OK"
+echo " UPLOADED BY Hamdy Ahmed
+sleep 4;
+echo ""
+echo ""
+exit
